@@ -1,0 +1,44 @@
+Team 26:
+Jiaqi Tian 1000263546
+Yan Wan	   1000287511
+Si Yi Wu
+
+
+
+
+
+ubuntu@ip-172-31-42-27:~$ ab -n 1500 -c 100 http://ec2-34-235-2-173.compute-1.amazonaws.com/?keywords=nice+weather
+This is ApacheBench, Version 2.3 <$Revision: 1528965 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking ec2-34-235-2-173.compute-1.amazonaws.com (be patient)
+Completed 150 requests
+Completed 300 requests
+Completed 450 requests
+Completed 600 requests
+Completed 750 requests
+Completed 900 requests
+Completed 1050 requests
+Completed 1200 requests
+Completed 1350 requests
+apr_socket_recv: Connection reset by peer (104)
+Total of 1426 requests completed
+
+
+
+procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
+ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
+ 0  0      0 265188  12160 277436    0    0   179   252  152  191  2  1 95  1  0
+ 0  0      0 265140  12160 277468    0    0     0     0   20   19  0  0 100  0  0
+ 0  0      0 265140  12160 277468    0    0     0     0    8   10  0  0 100  0  0
+ 0  0      0 265148  12160 277468    0    0     0     0    7   10  0  0 100  0  0
+ 0  0      0 265156  12160 277468    0    0     0     0    8   12  0  0 100  0  0
+
+
+
+Linux 3.13.0-36-generic (ip-172-31-42-27) 	10/23/2017 	_x86_64_	(1 CPU)
+
+02:17:08 AM  CPU    %usr   %nice    %sys %iowait    %irq   %soft  %steal  %guest  %gnice   %idle
+02:17:08 AM  all    1.70    0.27    0.99    1.34    0.00    0.06    0.26    0.00    0.00   95.38
+

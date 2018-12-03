@@ -1,0 +1,12 @@
+Public IP Address:
+http://ec2-34-235-2-173.compute-1.amazonaws.com
+
+Enabled Google APIs:
+googleapiclient
+oauth2client
+
+Benchmark Setup:
+Benchmark runs on a seperate micro instance within the same region with the following command:
+ab -n 200 -c 200 http://ec2-34-235-2-173.compute-1.amazonaws.com/?keywords=helloworld+foo+bar
+
+
