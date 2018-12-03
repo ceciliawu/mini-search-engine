@@ -5,8 +5,8 @@ import boto.ec2
 import os
 import time
 
-AWS_KEY_ID = 'AKIAJWKFMXPDMTABNXUA'
-AWS_SECRET_ACCESS_KEY = 'SB8O6hpWNdbUhcHJWagGbp7nVW3ZUImpNIIFSCZv'
+AWS_KEY_ID = '**********' #put your own here
+AWS_SECRET_ACCESS_KEY = '*********' #put your own here
 KEY_NAME = 'greenLight'
 SECURITY_GROUP_NAME = 'csc326-group26'
 IMAGE_ID = 'ami-8caa1ce4'
